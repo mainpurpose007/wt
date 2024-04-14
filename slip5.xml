@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ItemData>
+    <item>
+        <name>Football</name>
+        <rate>450</rate>
+        <quantity>10</quantity>
+    </item>
+    <item>
+        <name>Cricket Kit</name>
+        <rate>4500</rate>
+        <quantity>100</quantity>
+    </item>
+    <item>
+        <name>Pen</name>
+        <rate>40</rate>
+        <quantity>1000</quantity>
+    </item>
+    <item>
+        <name>pencil</name>
+        <rate>4</rate>
+        <quantity>50</quantity>
+    </item>
+    <item>
+        <name>Eraser</name>
+        <rate>10</rate>
+        <quantity>1000</quantity>
+    </item>
+</ItemData>

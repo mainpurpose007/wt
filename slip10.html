@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <br>
+    <p id="para">This is present paragraph</p>
+    <br>
+
+    <button onclick="beforeClick()">Before Click</button>
+    <button onclick="afterClick()">After Click</button>
+
+
+    <script>
+        function beforeClick(){
+            $("#para").before("<span> This is before paragraph </span>");
+        }
+
+        function afterClick(){
+            $("#para").after("<span> This is after paragraph </span>");
+        }
+    </script>
+</body>
+</html>

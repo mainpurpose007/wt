@@ -1,0 +1,52 @@
+<html lang="en">
+
+<body onload="greating()">
+    <script>
+        function greating() {
+            alert("Welcome Sir.");
+        }
+
+        function formSubmit() {
+            var id = document.getElementById("sid").value;
+            var name = document.getElementById("sname").value;
+            var std = document.getElementById("std").value;
+            var age = document.getElementById("age").value;
+
+            if (id == "" && name == "" && std == "" && age == "") {
+                alert("Enter info for register...");
+                return false;
+            } else {
+                alert("Register Successfully...");
+                return true;
+            }
+        }
+    </script>
+
+
+    <center>
+        <form onsubmit="return formSubmit()">
+            <br>
+            <label>Enter Roll Number of student* </label>
+            <br>
+            <input type="number" id="sid"  />
+            <br>
+            <label>Enter Student Full Name* </label>
+            <br>
+            <input type="text" id="sname"  />
+            <br>
+            <label>Enter Student Std* </label>
+            <br>
+            <input type="number" id="std"  />
+            <br>
+            <label>Enter Student age* </label>
+            <br>
+            <input type="number" id="age"  />
+            <br>
+
+            <button>Submit</button>
+        </form>
+    </center>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <center>
+        <form id="voterForm" action="slip27php.php" method="post" onsubmit="formSubmit(event)">
+            
+            <label>Name</label>
+            <input type="text" name="name" id="name" title="Enter Full Name Uppercase">
+            <br>
+            <label>age</label>
+            <input type="number" name="age" id="age">
+            <br>
+            <label>Nationallity</label>
+            <input type="text" name="nationality" id="nationality">
+            <br>
+            <button type="submit">Go Next</button>
+        </form>
+    </center>
+
+    <div id="response"></div>
+
+    <script>
+        function formSubmit(event){
+            event.preventDefault();
+            var form = document.getElementById("voterForm");
+            var formData = new FormData(form);
+            var xml = new XMLHttpRequest();
+            xml.open("POST" , "slip27php.php" , true);
+            xml.onload = function(){
+                if(xml.status == 200){
+                    document.getElementById("response").innerHTML = xml.responseText;
+                }
+            };
+            xml.send(formData);
+        }
+    </script>
+
+</body>
+</html>

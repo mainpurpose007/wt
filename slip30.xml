@@ -1,0 +1,38 @@
+<Bookstore>
+    <Yoga>
+        <Book>
+            <Book_Title>The Power of Now</Book_Title>
+            <Book_Author>Eckhart Tolle</Book_Author>
+            <Book_Price>15.99</Book_Price>
+        </Book>
+        <Book>
+            <Book_Title>Light on Yoga</Book_Title>
+            <Book_Author>B.K.S. Iyengar</Book_Author>
+            <Book_Price>20.50</Book_Price>
+        </Book>
+    </Yoga>
+    <Story>
+        <Book>
+            <Book_Title>To Kill a Mockingbird</Book_Title>
+            <Book_Author>Harper Lee</Book_Author>
+            <Book_Price>12.99</Book_Price>
+        </Book>
+        <Book>
+            <Book_Title>Harry Potter and the Sorcerer's Stone</Book_Title>
+            <Book_Author>J.K. Rowling</Book_Author>
+            <Book_Price>18.95</Book_Price>
+        </Book>
+    </Story>
+    <Technical>
+        <Book>
+            <Book_Title>Introduction to Algorithms</Book_Title>
+            <Book_Author>Thomas H. Cormen</Book_Author>
+            <Book_Price>40.00</Book_Price>
+        </Book>
+        <Book>
+            <Book_Title>Head First Design Patterns</Book_Title>
+            <Book_Author>Eric Freeman</Book_Author>
+            <Book_Price>34.99</Book_Price>
+        </Book>
+    </Technical>
+</Bookstore>

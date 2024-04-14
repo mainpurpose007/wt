@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+        function printTable(){
+            var ob = false;
+            ob = new XMLHttpRequest();
+
+            ob.open("GET" , "slip12php.php?");
+
+            ob.send();
+
+            ob.onreadystatechange = function(){
+                if(ob.readyState == 4 && ob.status == 200){
+                    document.getElementById("data").innerHTML = ob.responseText;
+                }
+            }
+
+        }
+    </script>
+
+    <h1>Click Following button for show table </h1>
+
+    <button onclick="printTable()">Print Table</button>
+
+    <span id="data"></span>
+
+</body>
+</html>

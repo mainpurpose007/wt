@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <script>
+
+
+        function check(){
+
+            var realUsername = "admin";
+            var realPassword = "admin";
+
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            
+            if(realUsername == username && realPassword == password){
+                alert("Login Successful");
+            }else{
+                alert("Opps! password was incorrect... Try again");
+            }
+        }
+
+    </script>
+    <label for="u">Enter Here username* </label>
+    <input type="text" name="username" id="username">
+    <label for="u">Enter Here password* </label>
+    <input type="text" name="password" id="password">
+
+    <button type="submit" onclick="check()">Submit</button>
+
+</body>
+</html>

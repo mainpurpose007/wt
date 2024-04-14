@@ -1,0 +1,39 @@
+<html>
+
+<body>
+    <script>
+        function emp(){
+            var getSingleEmployee = document.getElementById("employee_select_name").value;
+
+            var xml = new XMLHttpRequest();
+
+            xml.open("GET" , "slip26php.php?employeeName="+getSingleEmployee , true);
+
+            xml.onreadystatechange = function(){
+                if(xml.readyState == 4 && xml.status == 200){
+                    var se = JSON.parse(xml.responseText);
+
+                    document.getElementById("EmployeeTable").innerHTML = "no : " + se.no + "Name : " + se.name + " Designation : " + se.desi + " Salary : " + se.salary;
+                }
+            };
+            xml.send();
+        }
+    </script>
+
+
+    <h1>Select Following Employee </h1>
+    <select name="employee" id="employee_select_name" onclick="emp()">
+        <option value="Roshan">Roshan</option>
+        <option value="Vishal">Vishal</option>
+        <option value="Rv">Rv</option>
+    </select>
+
+    <h1>Employee Details : </h1>
+
+    <div id="EmployeeTable">
+
+    </div>
+
+</body>
+
+</html>
